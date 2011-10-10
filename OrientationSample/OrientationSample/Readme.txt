@@ -1,0 +1,1 @@
+Sample code to demostrate interpreting and changing the image orientation. Sample photos are from http://www.gotow.net/creative/wordpress/?p=64 

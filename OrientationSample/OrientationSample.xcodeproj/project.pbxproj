@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		613B612D1442BD1500120FB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613B612C1442BD1500120FB6 /* UIKit.framework */; };
+		613B612F1442BD1500120FB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613B612E1442BD1500120FB6 /* Foundation.framework */; };
+		613B61311442BD1500120FB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613B61301442BD1500120FB6 /* CoreGraphics.framework */; };
+		613B61371442BD1500120FB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 613B61351442BD1500120FB6 /* InfoPlist.strings */; };
+		613B61391442BD1500120FB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 613B61381442BD1500120FB6 /* main.m */; };
+		613B613D1442BD1600120FB6 /* OrientationSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 613B613C1442BD1600120FB6 /* OrientationSampleAppDelegate.m */; };
+		613B61401442BD1600120FB6 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 613B613E1442BD1600120FB6 /* MainWindow.xib */; };
+		613B61431442BD1600120FB6 /* OrientationSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 613B61421442BD1600120FB6 /* OrientationSampleViewController.m */; };
+		613B61461442BD1600120FB6 /* OrientationSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 613B61441442BD1600120FB6 /* OrientationSampleViewController.xib */; };
+		617A47651442C73700D1DD1D /* UIImage+Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 617A47641442C73700D1DD1D /* UIImage+Rotation.m */; };
+		617A47671442CAE300D1DD1D /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 617A47661442CAE300D1DD1D /* Readme.txt */; };
+		61F4E6031442C452007A85A7 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F4E5FC1442C452007A85A7 /* 2.jpg */; };
+		61F4E6041442C452007A85A7 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F4E5FD1442C452007A85A7 /* 3.jpg */; };
+		61F4E6051442C452007A85A7 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F4E5FE1442C452007A85A7 /* 4.jpg */; };
+		61F4E6061442C452007A85A7 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F4E5FF1442C452007A85A7 /* 5.jpg */; };
+		61F4E6071442C452007A85A7 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F4E6001442C452007A85A7 /* 6.jpg */; };
+		61F4E6081442C452007A85A7 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F4E6011442C452007A85A7 /* 7.jpg */; };
+		61F4E6091442C452007A85A7 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F4E6021442C452007A85A7 /* 8.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		613B61281442BD1500120FB6 /* OrientationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrientationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		613B612C1442BD1500120FB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		613B612E1442BD1500120FB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		613B61301442BD1500120FB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		613B61341442BD1500120FB6 /* OrientationSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrientationSample-Info.plist"; sourceTree = "<group>"; };
+		613B61361442BD1500120FB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		613B61381442BD1500120FB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		613B613A1442BD1500120FB6 /* OrientationSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OrientationSample-Prefix.pch"; sourceTree = "<group>"; };
+		613B613B1442BD1600120FB6 /* OrientationSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrientationSampleAppDelegate.h; sourceTree = "<group>"; };
+		613B613C1442BD1600120FB6 /* OrientationSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrientationSampleAppDelegate.m; sourceTree = "<group>"; };
+		613B613F1442BD1600120FB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		613B61411442BD1600120FB6 /* OrientationSampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrientationSampleViewController.h; sourceTree = "<group>"; };
+		613B61421442BD1600120FB6 /* OrientationSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrientationSampleViewController.m; sourceTree = "<group>"; };
+		613B61451442BD1600120FB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/OrientationSampleViewController.xib; sourceTree = "<group>"; };
+		617A47631442C73700D1DD1D /* UIImage+Rotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Rotation.h"; path = "../../UIImage+Rotation.h"; sourceTree = "<group>"; };
+		617A47641442C73700D1DD1D /* UIImage+Rotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Rotation.m"; path = "../../UIImage+Rotation.m"; sourceTree = "<group>"; };
+		617A47661442CAE300D1DD1D /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		61F4E5FC1442C452007A85A7 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		61F4E5FD1442C452007A85A7 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		61F4E5FE1442C452007A85A7 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		61F4E5FF1442C452007A85A7 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		61F4E6001442C452007A85A7 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		61F4E6011442C452007A85A7 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		61F4E6021442C452007A85A7 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		613B61251442BD1500120FB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613B612D1442BD1500120FB6 /* UIKit.framework in Frameworks */,
+				613B612F1442BD1500120FB6 /* Foundation.framework in Frameworks */,
+				613B61311442BD1500120FB6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		613B611D1442BD1500120FB6 = {
+			isa = PBXGroup;
+			children = (
+				613B61321442BD1500120FB6 /* OrientationSample */,
+				61F4E5FB1442C452007A85A7 /* Resources */,
+				613B612B1442BD1500120FB6 /* Frameworks */,
+				613B61291442BD1500120FB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		613B61291442BD1500120FB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				613B61281442BD1500120FB6 /* OrientationSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		613B612B1442BD1500120FB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				613B612C1442BD1500120FB6 /* UIKit.framework */,
+				613B612E1442BD1500120FB6 /* Foundation.framework */,
+				613B61301442BD1500120FB6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		613B61321442BD1500120FB6 /* OrientationSample */ = {
+			isa = PBXGroup;
+			children = (
+				613B613B1442BD1600120FB6 /* OrientationSampleAppDelegate.h */,
+				613B613C1442BD1600120FB6 /* OrientationSampleAppDelegate.m */,
+				613B613E1442BD1600120FB6 /* MainWindow.xib */,
+				613B61411442BD1600120FB6 /* OrientationSampleViewController.h */,
+				613B61421442BD1600120FB6 /* OrientationSampleViewController.m */,
+				613B61441442BD1600120FB6 /* OrientationSampleViewController.xib */,
+				613B61331442BD1500120FB6 /* Supporting Files */,
+				617A47631442C73700D1DD1D /* UIImage+Rotation.h */,
+				617A47641442C73700D1DD1D /* UIImage+Rotation.m */,
+			);
+			path = OrientationSample;
+			sourceTree = "<group>";
+		};
+		613B61331442BD1500120FB6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				613B61341442BD1500120FB6 /* OrientationSample-Info.plist */,
+				613B61351442BD1500120FB6 /* InfoPlist.strings */,
+				613B61381442BD1500120FB6 /* main.m */,
+				613B613A1442BD1500120FB6 /* OrientationSample-Prefix.pch */,
+				617A47661442CAE300D1DD1D /* Readme.txt */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61F4E5FB1442C452007A85A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				61F4E5FC1442C452007A85A7 /* 2.jpg */,
+				61F4E5FD1442C452007A85A7 /* 3.jpg */,
+				61F4E5FE1442C452007A85A7 /* 4.jpg */,
+				61F4E5FF1442C452007A85A7 /* 5.jpg */,
+				61F4E6001442C452007A85A7 /* 6.jpg */,
+				61F4E6011442C452007A85A7 /* 7.jpg */,
+				61F4E6021442C452007A85A7 /* 8.jpg */,
+			);
+			name = Resources;
+			path = OrientationSample/Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		613B61271442BD1500120FB6 /* OrientationSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 613B61491442BD1600120FB6 /* Build configuration list for PBXNativeTarget "OrientationSample" */;
+			buildPhases = (
+				613B61241442BD1500120FB6 /* Sources */,
+				613B61251442BD1500120FB6 /* Frameworks */,
+				613B61261442BD1500120FB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrientationSample;
+			productName = OrientationSample;
+			productReference = 613B61281442BD1500120FB6 /* OrientationSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		613B611F1442BD1500120FB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "GoshPosh, Inc.";
+			};
+			buildConfigurationList = 613B61221442BD1500120FB6 /* Build configuration list for PBXProject "OrientationSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 613B611D1442BD1500120FB6;
+			productRefGroup = 613B61291442BD1500120FB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				613B61271442BD1500120FB6 /* OrientationSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		613B61261442BD1500120FB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613B61371442BD1500120FB6 /* InfoPlist.strings in Resources */,
+				613B61401442BD1600120FB6 /* MainWindow.xib in Resources */,
+				613B61461442BD1600120FB6 /* OrientationSampleViewController.xib in Resources */,
+				61F4E6031442C452007A85A7 /* 2.jpg in Resources */,
+				61F4E6041442C452007A85A7 /* 3.jpg in Resources */,
+				61F4E6051442C452007A85A7 /* 4.jpg in Resources */,
+				61F4E6061442C452007A85A7 /* 5.jpg in Resources */,
+				61F4E6071442C452007A85A7 /* 6.jpg in Resources */,
+				61F4E6081442C452007A85A7 /* 7.jpg in Resources */,
+				61F4E6091442C452007A85A7 /* 8.jpg in Resources */,
+				617A47671442CAE300D1DD1D /* Readme.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		613B61241442BD1500120FB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613B61391442BD1500120FB6 /* main.m in Sources */,
+				613B613D1442BD1600120FB6 /* OrientationSampleAppDelegate.m in Sources */,
+				613B61431442BD1600120FB6 /* OrientationSampleViewController.m in Sources */,
+				617A47651442C73700D1DD1D /* UIImage+Rotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		613B61351442BD1500120FB6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				613B61361442BD1500120FB6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		613B613E1442BD1600120FB6 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				613B613F1442BD1600120FB6 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		613B61441442BD1600120FB6 /* OrientationSampleViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				613B61451442BD1600120FB6 /* en */,
+			);
+			name = OrientationSampleViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		613B61471442BD1600120FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		613B61481442BD1600120FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		613B614A1442BD1600120FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OrientationSample/OrientationSample-Prefix.pch";
+				INFOPLIST_FILE = "OrientationSample/OrientationSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		613B614B1442BD1600120FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OrientationSample/OrientationSample-Prefix.pch";
+				INFOPLIST_FILE = "OrientationSample/OrientationSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		613B61221442BD1500120FB6 /* Build configuration list for PBXProject "OrientationSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				613B61471442BD1600120FB6 /* Debug */,
+				613B61481442BD1600120FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		613B61491442BD1600120FB6 /* Build configuration list for PBXNativeTarget "OrientationSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				613B614A1442BD1600120FB6 /* Debug */,
+				613B614B1442BD1600120FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 613B611F1442BD1500120FB6 /* Project object */;
+}
