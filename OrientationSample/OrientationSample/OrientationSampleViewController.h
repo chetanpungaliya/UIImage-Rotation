@@ -10,10 +10,15 @@
 
 @interface OrientationSampleViewController : UIViewController {
     UIImageView *imageView;
+    
 }
 
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
+@property (nonatomic, retain) IBOutlet UIImage *originalImage;
+
 - (IBAction)loadImage:(id)sender;
 - (IBAction)rotate:(id)sender;
+
+- (UIImage *) renderImage:(UIImage *)image;
 
 @end

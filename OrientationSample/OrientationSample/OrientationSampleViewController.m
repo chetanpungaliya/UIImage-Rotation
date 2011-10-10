@@ -11,6 +11,7 @@
 
 @implementation OrientationSampleViewController
 @synthesize imageView;
+@synthesize originalImage = _originalImage;
 
 - (void)didReceiveMemoryWarning
 {
@@ -45,16 +46,57 @@
 
 - (void)dealloc {
     [imageView release];
+    [_originalImage release];
     [super dealloc];
 }
+
+- (UIImage *) renderImage:(UIImage *)image
+{
+    
+    UIImage *renderedImage = image;
+    if (image)
+    {
+    CGColorSpaceRef colorSpaceRef = CGColorSpaceCreateDeviceRGB();
+    
+    CGContextRef bitmapRef = CGBitmapContextCreate(NULL,
+                                                   CGImageGetWidth(image.CGImage),
+                                                   CGImageGetHeight(image.CGImage),
+                                                   8,
+                                                   0,
+                                                   colorSpaceRef,
+                                                   kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+    
+    CGColorSpaceRelease(colorSpaceRef);
+    
+    CGContextSetRGBFillColor (bitmapRef, 0, 0, 0, 1);
+    CGContextFillRect (bitmapRef, CGRectMake (0, 0, CGImageGetWidth(image.CGImage),
+                                              CGImageGetHeight(image.CGImage)));
+    
+    CGContextDrawImage(bitmapRef, CGRectMake(0, 0, CGImageGetWidth(image.CGImage),
+                                             CGImageGetHeight(image.CGImage)), image.CGImage);
+    
+    CGImageRef newImageRef = CGBitmapContextCreateImage(bitmapRef);
+    renderedImage = [UIImage imageWithCGImage:newImageRef];
+    
+    // Clean up
+    CGContextRelease(bitmapRef);
+    CGImageRelease(newImageRef);
+    
+    }
+    return renderedImage;
+}
+
 - (IBAction)loadImage:(id)sender {
     
-    UIImage * image = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", ((UIButton *)sender).tag]];
-    self.imageView.image = image;
+    self.originalImage = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", ((UIButton *)sender).tag]];
+    
+    UIImage *image = self.originalImage;
+    
+    self.imageView.image = [self renderImage:image];
 }
 
 - (IBAction)rotate:(id)sender {
     
-    self.imageView.image = [self.imageView.image rotateImageToMaxmumSize:5000 withMinimumSize:400 ansBackgoundColor:[UIColor blackColor]];
+    self.imageView.image = [self renderImage:[self.originalImage rotateImageToMaxmumSize:5000 withMinimumSize:400 ansBackgoundColor:[UIColor blackColor]]];
 }
 @end
