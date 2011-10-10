@@ -10,6 +10,6 @@
 
 @interface UIImage (UIImage_Rotation)
 
-- (UIImage *)rotateImageToMaxmumSize:(NSUInteger)maxDim withMinimumSize:(NSUInteger)minDim ansBackgoundColor:(UIColor *)color;
+- (UIImage *)rotateImageToMaxmumSize:(NSUInteger)maxDim withMinimumSize:(NSUInteger)minDim andBackgoundColor:(UIColor *)color;
 
 @end

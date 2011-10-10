@@ -10,7 +10,7 @@
 
 @implementation UIImage (UIImage_Rotation)
 
-- (UIImage *)rotateImageToMaxmumSize:(NSUInteger)maxDim withMinimumSize:(NSUInteger)minDim ansBackgoundColor:(UIColor *)color
+- (UIImage *)rotateImageToMaxmumSize:(NSUInteger)maxDim withMinimumSize:(NSUInteger)minDim andBackgoundColor:(UIColor *)color
 {
     NSLog(@"Original Image Size %lu x %lu, orientation %u", CGImageGetWidth(self.CGImage), CGImageGetHeight(self.CGImage), self.imageOrientation);
     

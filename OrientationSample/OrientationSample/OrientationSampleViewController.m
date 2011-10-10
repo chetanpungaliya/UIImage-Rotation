@@ -97,6 +97,6 @@
 
 - (IBAction)rotate:(id)sender {
     
-    self.imageView.image = [self renderImage:[self.originalImage rotateImageToMaxmumSize:5000 withMinimumSize:400 ansBackgoundColor:[UIColor blackColor]]];
+    self.imageView.image = [self renderImage:[self.originalImage rotateImageToMaxmumSize:5000 withMinimumSize:400 andBackgoundColor:[UIColor blackColor]]];
 }
 @end
